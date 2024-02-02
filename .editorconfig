@@ -1,0 +1,24 @@
+# 이 설정은 현재 디렉터리와 그 하위 디렉터리에만 적용.
+# .editorconfig 가 root 폴더에 있으므로 모든 파일에 적용됨.
+root = true
+
+[*]
+# 파일의 문자셋을 UTF-8로 설정.
+charset = utf-8
+# 들여쓰기에 공백을 사용.
+indent_style = space
+# 줄바꿈 문자로 LF (Line Feed)를 사용.
+end_of_line = lf
+# 파일 끝에 항상 새 줄을 추가.
+insert_final_newline = true
+# 라인 끝의 공백 문자를 자동으로 제거.
+trim_trailing_whitespace = true
+
+[*.md]
+# 마크다운 파일에서는 라인 끝의 공백 문자를 제거하지 않음
+# 마크다운에서 라인 끝의 두 개의 공백은 줄바꿈을 의미
+trim_trailing_whitespace = false
+
+[*.kt]
+indent_size = 4
+max_line_length = 120
