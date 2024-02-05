@@ -1,18 +1,20 @@
-## Swagger
-#### Official Site
-https://springdoc.org/
-#### Reference Site
-https://www.baeldung.com/spring-rest-openapi-documentation
+# Morning-Auth 프로젝트 개요
 
-```
-dependencies {
-	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
-	implementation("org.springdoc:springdoc-openapi-starter-webmvc-api:2.2.0")
-}
-```
+🚀 Morning-Auth는 드론 추적 애플리케이션을 위한 인증 및 권한 부여 기능을 구현한 독립 프로젝트입니다. 보안과 사용의 용이성에 중점을 두고 개발된 이 프로젝트는 인가된 사용자만이 드론 추적 작업에 접근하고 제어할 수 있도록 견고한 시스템의 기반을 마련합니다.
 
-Description Path
-> http://localhost:8001/api-docs
+## 기능
+**보안 인증**: 사용자 신원을 검증하기 위한 안전한 로그인 메커니즘 구현.
+**권한 제어**: 다양한 사용자 역할에 대한 권한을 정의하고 관리하여 적절한 접근 수준을 보장.
+**확장성**: 추가 서비스 및 기능과 쉽게 통합할 수 있도록 확장성을 염두에 두고 설계.
 
-Document Endpoint
-> http://localhost:8001/swagger-ui/index.html
+## 곧 추가될 기능
+**토큰 기능**: 보안 강화와 사용자 검증 프로세스를 더욱 간소화하기 위해 토큰 기반 인증 도입 예정.
+
+## 기술 스택 및 도구
+Morning-Auth는 다음 기술 스택과 도구를 사용하여 개발되었습니다:
+
+**코틀린(Kotlin)**: 안전하고 효율적인 백엔드 개발을 위한 모던 프로그래밍 언어.
+**스프링부트(Spring Boot)**: 빠르고 쉬운 마이크로서비스 구축을 위한 프레임워크.
+**MySQL**: 안정적인 데이터 관리와 트랜잭션 처리를 위한 관계형 데이터베이스 시스템.
+**Vault**: 애플리케이션 시크릿과 강력한 데이터 보호를 위한 도구.
+**Swagger**: API 설계, 빌드, 문서화 및 테스트를 위한 오픈 소스 도구.
